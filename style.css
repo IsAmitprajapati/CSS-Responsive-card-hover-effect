@@ -1,0 +1,68 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    height:100vh;
+
+}
+.facebook,.Youtube,.Twitter{
+    height: 230px;
+}
+.facebook:hover,.Youtube:hover,.Twitter:hover{
+    width:230px;
+    height: 330px;
+    background-color:white;
+    box-shadow: -5px -5px 10px rgba(0,0,0,0.2),
+    5px 5px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.facebook .icon,.Youtube .icon ,.Twitter .icon{
+    width: 230px;
+    height:230px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size:80px;
+    color:white;
+    border-radius: 5px;
+}
+.facebook .icon{
+    background-color:#4267b2;
+}
+.Youtube .icon{
+    background-color:#ff0000;
+}
+.Twitter .icon{
+    background-color:#1da1f2;
+}
+
+span{
+    padding:10px 5px;
+    display: none;
+}
+
+.facebook:hover span,.Youtube:hover span,.Twitter:hover span{
+    font-size: 20px;
+    font-weight: 900;
+    display: block;
+
+}
+p{
+    display: none;
+}
+.facebook:hover p,.Youtube:hover p,.Twitter:hover p{
+    font-size:18px;
+    text-align: center;
+    padding:5px 0px;
+    display:block;
+}
